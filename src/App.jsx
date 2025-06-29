@@ -5,7 +5,7 @@ import SearchForm from './components/SearchForm'
 import JobResults from './components/JobResults'
 import JobModal from './components/JobModal'
 
-const API_BASE_URL = 'http://127.0.0.1:5000'
+const API_BASE_URL = 'http://127.0.0.1:8080'
 
 function App() {
   const [jobs, setJobs] = useState([])
