@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Briefcase, Search, Users, TrendingUp } from 'lucide-react'
+import { Briefcase, Search, Users, TrendingUp, ExternalLink } from 'lucide-react'
 import { Card, CardContent } from './components/ui/card'
 import SearchForm from './components/SearchForm'
 import JobResults from './components/JobResults'
@@ -54,15 +54,14 @@ function App() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b bg-card shadow-premium-lg">
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <div className="p-3 gradient-primary rounded-xl shadow-premium">
-                <Briefcase className="h-8 w-8 text-primary-foreground" />
+            <div className="flex items-center gap-3">
+              <div className="p-2 gradient-primary rounded-lg shadow-premium">
+                <Briefcase className="h-6 w-6 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-3xl font-bold text-premium dark-text-glow">Career Unique Seek</h1>
-                
+                <h1 className="text-2xl font-bold text-premium dark-text-glow">Career Unique Seek</h1>
               </div>
             </div>
           </div>
@@ -147,6 +146,17 @@ function App() {
                 <Briefcase className="h-5 w-5 text-white" />
               </div>
               <span className="text-lg font-semibold text-premium dark-text-glow">Career Unique Seek</span>
+            </div>
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <a
+                href="https://github.com/Mohammed-Asfar/career_unique_seek_web"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300 hover:dark-glow"
+              >
+                <ExternalLink className="h-4 w-4" />
+                <span className="font-medium">View on GitHub</span>
+              </a>
             </div>
             <p className="text-muted-foreground font-medium">
               &copy; 2024 Career Unique Seek. Powered by multiple job platforms.
